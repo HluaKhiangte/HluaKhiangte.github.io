@@ -15,6 +15,10 @@
             --text-dim: #94a3b8;
         }
 
+        html {
+            scroll-behavior: smooth; /* Button hmeha a tawlh thlak nuam nan */
+        }
+
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--bg);
@@ -43,7 +47,7 @@
             border: 4px solid var(--primary);
             box-shadow: 0 0 25px rgba(59, 130, 246, 0.3);
             margin-bottom: 25px;
-            background-color: #1e293b; /* Placeholder rawng */
+            background-color: #1e293b; 
         }
 
         header h1 {
@@ -84,6 +88,8 @@
             display: flex;
             gap: 15px;
             margin-top: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .btn {
@@ -140,7 +146,6 @@
             flex-grow: 1;
         }
 
-        /* About Section */
         #about p {
             color: var(--text-dim);
             font-size: 1.1rem;
@@ -156,7 +161,7 @@
 
         .project-card {
             background: var(--card-bg);
-            padding: 25px;
+            padding: 20px;
             border-radius: 12px;
             border: 1px solid #334155;
             transition: transform 0.3s ease, border-color 0.3s ease;
@@ -168,6 +173,16 @@
             transform: translateY(-5px);
             border-color: var(--primary);
             box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Project Image Styling */
+        .project-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #0f172a;
         }
 
         .project-card h3 {
@@ -276,7 +291,9 @@
         
         <div class="action-buttons">
             <a href="myCV.pdf" class="btn btn-primary" download>Download CV</a>
-            <a href="8132975819" class="btn btn-secondary">Contact Me</a>
+            <a href="mailto:hluakhiangte2@gmail.com" class="btn btn-secondary">Email Me</a>
+            <a href="tel:8132975819" class="btn btn-secondary">Contact Me</a>
+            <a href="https://wa.me/918132975819" class="btn btn-secondary" target="_blank">WhatsApp Me</a>
         </div>
     </header>
 
@@ -298,29 +315,38 @@
             <div class="projects-grid">
                 
                 <div class="project-card">
+                    <img src="VideoVault.png" alt="Video Vault" class="project-img">
                     <h3>Video Vault</h3>
                     <p>Video hrang hrang Social Media Fb, Ig, tweeter leh Youtube video download theihna a ni, heng bakah hian site 50+ a video te a download theih bawk.</p>
                     <a href="https://github.com/HluaKhiangte/video-vault" class="project-link" target="_blank">View on GitHub →</a>
                 </div>
 
                 <div class="project-card">
+                    <img src="MizoSmart AI.png" alt="MizoSmart AI" class="project-img">
                     <h3>MizoSmart AI</h3>
                     <p>Wepapp Mizo te tana mahni tawng ngeia biak theih tur AI a ni.</p>
                     <a href="https://github.com/HluaKhiangte/mizosmart-ai-assistant" class="project-link" target="_blank">View on GitHub →</a>
                 </div>
 
                 <div class="project-card">
+                    <img src="Hostel.png" alt="NIELIT Hostel Management" class="project-img">
                     <h3>NIELIT Hostel Management</h3>
                     <p>Hostel Management System WebApp ruahmanna leh siam hna.</p>
                     <a href="https://github.com/HluaKhiangte/nielit-hostel-portal" class="project-link" target="_blank">View on GitHub →</a>
                 </div>
 
                 <div class="project-card">
+                    <img src="Physiotherapy.png" alt="Therapyzen Suite" class="project-img">
                     <h3>Therapyzen Suite</h3>
                     <p>Physiotherapy website leh Management System mumal taka buatsaihna.</p>
                     <a href="https://github.com/HluaKhiangte/therapyzen-suite" class="project-link" target="_blank">View on GitHub →</a>
                 </div>
-
+                <div class="project-card">
+                    <img src="call4contact.png" alt="Therapyzen Suite" class="project-img">
+                    <h3>CALL DIRECTORY</h3>
+                    <p>Organisation tana call directory</p>
+                    <a href="https://github.com/HluaKhiangte/call4contact-hub" class="project-link" target="_blank">View on GitHub →</a>
+                </div>
             </div>
         </section>
 
@@ -340,7 +366,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Lalhminghlua Khiangte. All rights reserved.</p>
+        <p>&copy; 2026 Lalhminghlua Khiangte. All rights reserved.</p>
     </footer>
 
 </body>
